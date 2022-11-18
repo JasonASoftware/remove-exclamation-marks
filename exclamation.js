@@ -1,5 +1,5 @@
 function removeExclamationMarks(s) {
-  // replace one or more exclamation marks (!+) from the end ($) with an empty string ("")
-  //use the parameter with .replace to remove exclamtion marks, strings, etc
-  return s.replace(/!+$/, "");
+  // using string .replace while using regex (/\/) and g means global while replacing it with an empty string
+  return s.replace(/\!/g,'');
+
 }
